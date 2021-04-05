@@ -5794,7 +5794,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const pageStyles = {
   color: "#232129",
-  padding: 30,
+  padding: 15,
   fontFamily: "-apple-system, Roboto, sans-serif, serif"
 };
 const paragraphStyles = {
@@ -5897,20 +5897,18 @@ const IndexPage = ({
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("main", {
     style: pageStyles
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("title", null, siteTitle), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "flex flex-row justify-between px-10 align-text-bottom "
+    className: "flex flex-row flex-wrap justify-between px-20 pt-5 align-text-bottom"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    style: {
-      minWidth: `170`
-    }
+    className: "md:text-3xl sm:text-xl base:text-xl align-text-bottom text-center w-full"
+  }, "Manuais & Ajuda"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "m-auto"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
     src: "../images/logo.png",
     alt: "wEstoque Sistema",
     layout: "fixed",
     width: 150,
     __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/4214218914.json */ "./.cache/caches/gatsby-plugin-image/4214218914.json")
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", {
-    className: "md:text-3xl sm:text-xl base:text-xl align-text-bottom"
-  }, "Manuais & Ajuda")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "flex items-center justify-center px-5 py-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "w-full mx-auto rounded-xl min-w-80 max-w-3xl",
@@ -5936,10 +5934,9 @@ const IndexPage = ({
     node
   }) => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-      className: "py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6 hover:shadow-xl",
+      className: "p-7 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6 hover:shadow-xl",
       style: {
-        width: `330px`,
-        height: `280px`
+        maxWidth: `335px`
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
       to: node.frontmatter.slug,
@@ -14398,7 +14395,7 @@ module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.c
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Base de Conhecimento - wEstoque.com.br","description":"Informações e artigos de como usar o sistema wEstoque"}},"sessoes":{"edges":[{"node":{"excerpt":"Configurações Iniciais","frontmatter":{"order":1,"date":"January 4, 2018","title":"Configurações Iniciais","description":"Siga o passo-a-passo para o processo de cadastramento da sua empresa no sistema wEstoque e configure seu ambiente para começar a lançar suas vendas e estoques.","thumbnail":"⭐️","color":"#BC027F","slug":"configuracoes-iniciais"},"id":"425ea026-ff2c-5d58-9a7b-f451916d01bf"}},{"node":{"excerpt":"Estoques e Compras","frontmatter":{"order":2,"date":"January 4, 2018","title":"Estoques e Compras","description":"Saiba como realizar o controle das compras da sua empresa com wEstoque! Tenha informações precisas sobre: sistema PDV, emissão de pedidos, orçamento de venda e muito mais.","thumbnail":"📦","color":"#1099A8","slug":"estoques-e-compras"},"id":"a886cb4c-b4bc-58cf-979e-c9b1f0eea85e"}},{"node":{"excerpt":"Vendas","frontmatter":{"order":3,"date":"January 4, 2018","title":"Vendas","description":"Saiba como realizar o controle das vendas da sua empresa com wEstoque! Tenha informações precisas com ponto de venda, emissão de pedidos, orçamento de vendas, comissões e muito mais.","thumbnail":"🛍","color":"#0D96F2","slug":"vendas"},"id":"eccb430b-ecbf-547e-ba53-361605921622"}},{"node":{"excerpt":"Financeiro","frontmatter":{"order":4,"date":"January 4, 2018","title":"Financeiro","description":"Descubra como usar os controles financeiros do sistema wEstoque. Tenham em mãos todos os dados financeiro e monitore a saúde do seu negócio de forma rápida, eficaz e segura.","thumbnail":"💰","color":"#8EB814","slug":"financeiro"},"id":"6c763dca-fadb-5e5c-8d50-0ec2e8d78163"}}]},"artigos":{"edges":[{"node":{"excerpt":"Atenção:  Você pode ter até 3 ESTOQUES sem custo adicional. A partir do quarto estoque é cobrado um valor adicional por mês. Ao realizar o…","frontmatter":{"order":1,"date":"January 4, 2018","title":"Como Criar um Novo Estoque no Loja/Filial","description":"Como adicionar mais de um estoque na loja/filial.","thumbnail":"🔧","color":"#BC027F","slug":"estoques-e-compras/como-criar-novo-estoque"},"id":"ba6af329-c779-5733-b0f3-d7c06434409a"}},{"node":{"excerpt":"Atenção:  Você pode ter até 3 ESTOQUES sem custo adicional. A partir do quarto estoque é cobrado um valor adicional por mês. Ao realizar o…","frontmatter":{"order":2,"date":"January 4, 2018","title":"Como Gerar uma Venda no PDV","description":"Descubra como fazer uma venda e baixar estoque.","thumbnail":"🛍","color":"#BC027F","slug":"vendas/como-fazer-vendas"},"id":"e031167d-2199-5e60-b5e3-d770c5306b3d"}},{"node":{"excerpt":"Atenção:  Você pode ter até 3 ESTOQUES sem custo adicional. A partir do quarto estoque é cobrado um valor adicional por mês. Ao realizar o…","frontmatter":{"order":3,"date":"January 4, 2018","title":"Como Gerar um Pedido de Venda","description":"Descubra como emitir e gerenciar pedidos.","thumbnail":"🔖","color":"#BC027F","slug":"vendas/como-gerar-pedido"},"id":"3a790d26-3c7e-53c4-af98-d7458b58a288"}}]}}}');
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"title":"Base de Conhecimento - wEstoque.com.br","description":"Informações e artigos de como usar o sistema wEstoque"}},"sessoes":{"edges":[{"node":{"excerpt":"Configurações Iniciais","frontmatter":{"order":1,"date":"January 4, 2018","title":"Configurações Iniciais","description":"Siga o passo-a-passo para o processo de cadastramento da sua empresa no sistema wEstoque e configure seu ambiente para começar a lançar suas vendas e estoques.","thumbnail":"⭐️","color":"#BC027F","slug":"configuracoes-iniciais"},"id":"425ea026-ff2c-5d58-9a7b-f451916d01bf"}},{"node":{"excerpt":"Estoques e Compras","frontmatter":{"order":2,"date":"January 4, 2018","title":"Estoques e Compras","description":"Saiba como realizar o controle das compras da sua empresa! Tenha informações precisas sobre: sistema PDV, emissão de pedidos, orçamento de venda e muito mais.","thumbnail":"📦","color":"#1099A8","slug":"estoques-e-compras"},"id":"a886cb4c-b4bc-58cf-979e-c9b1f0eea85e"}},{"node":{"excerpt":"Vendas","frontmatter":{"order":3,"date":"January 4, 2018","title":"Vendas","description":"Saiba como realizar o controle das vendas da sua empresa com wEstoque! Tenha informações precisas com ponto de venda, emissão de pedidos, orçamento de vendas, comissões e muito mais.","thumbnail":"🛍","color":"#0D96F2","slug":"vendas"},"id":"eccb430b-ecbf-547e-ba53-361605921622"}},{"node":{"excerpt":"Financeiro","frontmatter":{"order":4,"date":"January 4, 2018","title":"Financeiro","description":"Descubra como usar os controles financeiros do sistema wEstoque. Tenham em mãos todos os dados financeiro e monitore a saúde do seu negócio de forma rápida, eficaz e segura.","thumbnail":"💰","color":"#8EB814","slug":"financeiro"},"id":"6c763dca-fadb-5e5c-8d50-0ec2e8d78163"}}]},"artigos":{"edges":[{"node":{"excerpt":"Atenção:  Você pode ter até 3 ESTOQUES sem custo adicional. A partir do quarto estoque é cobrado um valor adicional por mês. Ao realizar o…","frontmatter":{"order":1,"date":"January 4, 2018","title":"Como Criar um Novo Estoque no Loja/Filial","description":"Como adicionar mais de um estoque na loja/filial.","thumbnail":"🔧","color":"#BC027F","slug":"estoques-e-compras/como-criar-novo-estoque"},"id":"ba6af329-c779-5733-b0f3-d7c06434409a"}},{"node":{"excerpt":"Atenção:  Você pode ter até 3 ESTOQUES sem custo adicional. A partir do quarto estoque é cobrado um valor adicional por mês. Ao realizar o…","frontmatter":{"order":2,"date":"January 4, 2018","title":"Como Gerar uma Venda no PDV","description":"Descubra como fazer uma venda e baixar estoque.","thumbnail":"🛍","color":"#BC027F","slug":"vendas/como-fazer-vendas"},"id":"e031167d-2199-5e60-b5e3-d770c5306b3d"}},{"node":{"excerpt":"Atenção:  Você pode ter até 3 ESTOQUES sem custo adicional. A partir do quarto estoque é cobrado um valor adicional por mês. Ao realizar o…","frontmatter":{"order":3,"date":"January 4, 2018","title":"Como Gerar um Pedido de Venda","description":"Descubra como emitir e gerenciar pedidos.","thumbnail":"🔖","color":"#BC027F","slug":"vendas/como-gerar-pedido"},"id":"3a790d26-3c7e-53c4-af98-d7458b58a288"}}]}}}');
 
 /***/ }),
 

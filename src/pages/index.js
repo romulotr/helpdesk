@@ -6,10 +6,9 @@ import { StaticImage } from "gatsby-plugin-image"
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: 30,
+  padding: 15,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
-
 
 const paragraphStyles = {
   marginBottom: 20,
@@ -133,11 +132,14 @@ const IndexPage = ({ data }, location) => {
     <main style={pageStyles}>
       <title>{siteTitle}</title>
 
-      <div className="flex flex-row justify-between px-10 align-text-bottom ">
-        <div style={{minWidth: `170`}}>
+      <div className="flex flex-row flex-wrap justify-between px-20 pt-5 align-text-bottom">
+        <div className="md:text-3xl sm:text-xl base:text-xl align-text-bottom text-center w-full p-4">
+          Manuais & Ajuda
+        </div>
+        <div className="m-auto">
           <StaticImage src="../images/logo.png" alt="wEstoque Sistema" layout="fixed" width={150} />
         </div>
-        <span className="md:text-3xl sm:text-xl base:text-xl align-text-bottom">Manuais & Ajuda</span>
+
       </div>
       
       
@@ -157,7 +159,7 @@ const IndexPage = ({ data }, location) => {
           {sessoesData.map(({ node }) => {
           return (
             
-              <div className="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6 hover:shadow-xl" style={{width:`330px`, height: `280px`}}>
+              <div className="p-7 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6 hover:shadow-xl" style={{maxWidth:`335px`}}>
                 <Link to={node.frontmatter.slug} key={node.id}>
                 <div className="text-center space-y-2 sm:text-left">
                   <div className="space-y-0.5">
