@@ -9,3 +9,8 @@ description: "Siga o passo-a-passo para o processo de cadastramento da sua empre
 ---
 
 Configurações Iniciais
+
+![diagrama 4 - 2](https://user-images.githubusercontent.com/7254854/113581233-401f7500-95fd-11eb-8626-09ff2e44971f.png)
+
+Isso é muito bom! #Loucura#
+
