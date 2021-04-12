@@ -1,7 +1,8 @@
 ---
 order: 2
 date: 2018-01-04T01:20:40.199Z
-slug: "vendas/como-fazer-vendas"
+sessao: "vendas"
+slug: "como-fazer-vendas"
 thumbnail: 🛍
 title: "Como Gerar uma Venda no PDV"
 color: "#BC027F"

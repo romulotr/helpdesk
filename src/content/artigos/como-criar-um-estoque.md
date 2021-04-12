@@ -1,7 +1,8 @@
 ---
 order: 1
 date: 2018-01-04T01:20:40.199Z
-slug: "estoques-e-compras/como-criar-novo-estoque"
+sessao: "estoques-e-compras"
+slug: "como-criar-novo-estoque"
 thumbnail: 🔧
 title: "Como Criar um Novo Estoque no Loja/Filial"
 color: "#BC027F"

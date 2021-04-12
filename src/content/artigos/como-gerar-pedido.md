@@ -1,7 +1,8 @@
 ---
 order: 3
 date: 2018-01-04T01:20:40.199Z
-slug: "vendas/como-gerar-pedido"
+sessao: "vendas"
+slug: "como-gerar-pedido"
 thumbnail: 🔖
 title: "Como Gerar um Pedido de Venda"
 color: "#BC027F"
