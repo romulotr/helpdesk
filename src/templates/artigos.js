@@ -38,34 +38,38 @@ class ArtigosTemplate extends React.Component {
           </div>
       </div>
       
-
       <div className="flex flex-wrap mx-auto">
         <div className="flex flex-row mx-auto justify-between px-5 flex-wrap max-w-screen-md">
-            
               <div className="p-7 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6 hover:shadow-xl">
-                <Link to={artigo.frontmatter.slug} key={artigo.frontmatter.order}>
                 <div className="text-center space-y-2 sm:text-left">
                   <div className="space-y-0.5">
                     <p className="text-sm text-black font-semibold border-0 border-b border-solid border-gray-100 mb-3">
                       <h1 className="font-sans md:text-xl ¿sm:text-base" style={{color: artigo.frontmatter.color}}><span role="img" aria-label={artigo.frontmatter.title}>{artigo.frontmatter.thumbnail}</span> {artigo.frontmatter.title}</h1>
                       <span className="text-gray-500 font-medium text-sm p-2">{artigo.frontmatter.description}</span>
                     </p>
-                    
                     <div className="description text-sm" dangerouslySetInnerHTML={{__html: artigo.html.replace(/(?:\r\n|\r|\n)/g, '<br />')}}/>
-
-                    
                   </div>
-                  <button className="px-4 py-1 text-sm text-yellow-500 font-semibold rounded-full border border-yellow-500 hover:text-white hover:bg-yellow-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2">Ver Manuais</button>
+                  <br />
+                  <hr />
+                  <br />
+                  <Link to={artigo.frontmatter.sessao} key={artigo.frontmatter.order}>
+                    <button className="px-4 py-1 text-sm text-yellow-500 font-semibold rounded-full border border-yellow-500 hover:text-white hover:bg-yellow-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2">Voltar para Manuais da Seção</button>
+                  </Link>
+                  <br />
+                  <br />
                 </div>
-                </Link>
-              </div>
 
+
+
+
+
+              </div>
+              
         </div>
-        
+
         
       </div>
-      <br /><br />
-      <hr />
+
       <br /><br />
 
       
@@ -89,6 +93,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 160)
       html
       frontmatter {
+        sessao
         title
         date(formatString: "MMMM DD, YYYY")
         description
