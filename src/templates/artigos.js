@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const pageStyles = {
     color: "#232129",
