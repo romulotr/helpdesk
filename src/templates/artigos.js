@@ -52,7 +52,7 @@ class ArtigosTemplate extends React.Component {
                   <br />
                   <hr />
                   <br />
-                  <Link to={artigo.frontmatter.sessao} key={artigo.frontmatter.order}>
+                  <Link to={'/'+artigo.frontmatter.sessao} key={artigo.frontmatter.order}>
                     <button className="px-4 py-1 text-sm text-yellow-500 font-semibold rounded-full border border-yellow-500 hover:text-white hover:bg-yellow-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2">Voltar para Manuais da Seção</button>
                   </Link>
                   <br />
