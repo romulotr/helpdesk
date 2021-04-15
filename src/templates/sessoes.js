@@ -11,13 +11,14 @@ const pageStyles = {
 
 class SessaoTemplate extends React.Component {
   render() {
+    const siteTitle = this.props.data.site.siteMetadata.title
     const sessao = this.props.data.sessao
     const artigosData = this.props.data.artigos.edges
     
 
     return (
     <main style={pageStyles}>
-      <title>{this.props.data.siteTitle}</title>
+      <title>{sessao.frontmatter.title} - {siteTitle}</title>
 
       <div className="flex flex-row flex-wrap justify-between px-20 pt-5 align-text-bottom">
         <div className="md:text-3xl sm:text-xl base:text-xl align-text-bottom text-center w-full p-4">

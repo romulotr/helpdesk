@@ -38,6 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
               node {
                 frontmatter {
                   title
+                  sessao
                   slug
                 }
                 fileAbsolutePath
@@ -74,26 +75,26 @@ exports.createPages = ({ graphql, actions }) => {
     })
 
 
-/*
-    clientes.forEach((cliente, index) => {
+
+    artigos.forEach((artigo, index) => {
       
-      const previous = index === clientes.length - 1 ? null : clientes[index + 1].node
-      const next = index === 0 ? null : clientes[index - 1].node
+      const previous = index === artigos.length - 1 ? null : artigos[index + 1].node
+      const next = index === 0 ? null : artigos[index - 1].node
       
 
 
       createPage({
-        path: `/cliente${cliente.node.fields.slug}`,
-        component: blogPost,
+        path: `${artigo.node.frontmatter.sessao}/${artigo.node.frontmatter.slug}`,
+        component: artigosPost,
         context: {
-          slug: cliente.node.fields.slug,
+          slug: `${artigo.node.frontmatter.slug}`,
           previous,
           next,
         },
       })
     })
 
-
+/*
     // Create tags pages.
     tagSet.forEach(tag => {
       createPage({

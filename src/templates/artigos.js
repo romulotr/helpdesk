@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { graphql, StaticQuery, Link } from "gatsby"
+import { graphql, Link } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const pageStyles = {
     color: "#232129",
@@ -11,8 +12,7 @@ const pageStyles = {
 
 class ArtigosTemplate extends React.Component {
   render() {
-    const artigo = this.props.data.markdownRemark
-    
+    const artigo = this.props.data.artigo
 
     return (
     <main style={pageStyles}>
@@ -40,27 +40,25 @@ class ArtigosTemplate extends React.Component {
       
 
       <div className="flex flex-wrap mx-auto">
-        <div className="flex flex-row mx-auto justify-between px-5 flex-wrap col-span-2 max-w-screen-md">
-          
-
+        <div className="flex flex-row mx-auto justify-between px-5 flex-wrap max-w-screen-md">
             
-              <div className="p-7 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6 hover:shadow-xl" style={{maxWidth:`335px`}}>
+              <div className="p-7 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 mt-6 hover:shadow-xl">
                 <Link to={artigo.frontmatter.slug} key={artigo.frontmatter.order}>
                 <div className="text-center space-y-2 sm:text-left">
                   <div className="space-y-0.5">
-                    <p className="text-lg text-black font-semibold border-0 border-b border-solid border-gray-100">
+                    <p className="text-sm text-black font-semibold border-0 border-b border-solid border-gray-100 mb-3">
                       <h1 className="font-sans md:text-xl ¿sm:text-base" style={{color: artigo.frontmatter.color}}><span role="img" aria-label={artigo.frontmatter.title}>{artigo.frontmatter.thumbnail}</span> {artigo.frontmatter.title}</h1>
+                      <span className="text-gray-500 font-medium text-sm p-2">{artigo.frontmatter.description}</span>
                     </p>
-                    <p className="text-gray-500 font-medium p-2">
-                      {artigo.frontmatter.description}
-                    </p>
+                    
+                    <div className="description text-sm" dangerouslySetInnerHTML={{__html: artigo.html.replace(/(?:\r\n|\r|\n)/g, '<br />')}}/>
+
+                    
                   </div>
                   <button className="px-4 py-1 text-sm text-yellow-500 font-semibold rounded-full border border-yellow-500 hover:text-white hover:bg-yellow-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2">Ver Manuais</button>
                 </div>
                 </Link>
               </div>
-            
-
 
         </div>
         
@@ -86,7 +84,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    artigo: markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
       html

@@ -189,7 +189,7 @@ const IndexPage = ({ data }, location) => {
 
                 
                   <div className="border-b border-gray-300 mt-2 p-2">
-                    <Link to={node.frontmatter.slug} key={node.id}>
+                    <Link to={node.frontmatter.sessao+"/"+node.frontmatter.slug} key={node.id}>
                       <h1 className="font-sans md:text-xl sm:text-base text-yellow-500  hover:text-yellow-700">{node.frontmatter.thumbnail}&nbsp;&nbsp;{node.frontmatter.title}</h1>
                     </Link>
                     <p className="font-sans text-xs md:text-sm">{node.frontmatter.description}</p>
@@ -256,6 +256,7 @@ query  {
           description
           thumbnail
           color
+          sessao
           slug
         }
         id
