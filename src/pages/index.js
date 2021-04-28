@@ -134,7 +134,8 @@ const IndexPage = ({ data }, location) => {
 
       <div className="flex flex-row flex-wrap justify-between px-20 pt-5 align-text-bottom">
         <div className="md:text-3xl sm:text-xl base:text-xl align-text-bottom text-center w-full p-4">
-          Manuais & Ajuda
+          Manuais & Ajuda - esse é do branch! kkkk que legal :)
+          
         </div>
         <div className="m-auto">
           <StaticImage src="../images/logo.png" alt="wEstoque Sistema" layout="fixed" width={150} />
