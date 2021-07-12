@@ -10,10 +10,19 @@ description: "Com o wEstoque você cadastra de maneira simples e rápida todas o
 ---
 
 Na barra superior clique em VENDAS e depois PRODUTOS, conforme a imagem:
-
 ![Produtos](https://user-images.githubusercontent.com/7254854/114796139-8ba4f200-9d66-11eb-8f9a-e72ef9989f39.png)
 
 No canto superior da tela, clique em NOVO PRODUTO.
-
 ![TXHiWcco4DdQBsHXZKoqpRDtattLRVC1](https://user-images.githubusercontent.com/7254854/114796153-93649680-9d66-11eb-966a-fcf3089862cd.png)
+
+Agora, é só preencher as informações solicitadas e clicar em SALVAR. 
+![uKRuhH7a3EeUJoXMfC3KhUlHWacg8hBQ](https://user-images.githubusercontent.com/7254854/125306923-ffbf4980-e305-11eb-8570-d314d65043d3.png)
+
+
+Agora é só adicionar os dados fiscais caso deseje, esse recurso é opcional. 
+![eS7IpQlWYH0dqlwuyDDz1Ezpdap5d3K6](https://user-images.githubusercontent.com/7254854/125307008-11085600-e306-11eb-8072-7faa201b9dd4.png)
+
+
+
+
 
