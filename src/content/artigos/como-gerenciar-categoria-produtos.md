@@ -1,7 +1,7 @@
 ---
 order: 2
 date: 2018-01-04T01:20:40.199Z
-sessao: "vendas"
+sessao: "vendas-e-pedidos"
 slug: "como-gerenciar-categoria-produtos"
 thumbnail: 🏷
 title: "Como gerenciar/editar categoria e sub-categoria de produtos"

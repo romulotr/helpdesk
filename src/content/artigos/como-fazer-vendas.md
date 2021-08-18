@@ -1,7 +1,7 @@
 ---
 order: 2
 date: 2018-01-04T01:20:40.199Z
-sessao: "vendas"
+sessao: "vendas-e-pedidos"
 slug: "como-fazer-vendas"
 thumbnail: 🛍
 title: "Como Gerar uma Venda no PDV"
