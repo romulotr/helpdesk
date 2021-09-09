@@ -5,14 +5,6 @@ import Search from "../components/search"
 import Seo from "../components/seo"
 
 
-
-const pageStyles = {
-    color: "#232129",
-    padding: 0,
-    fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  }
-
-
 const ArtigosTemplate = props => {
   
     const siteTitle = props.data.site.siteMetadata.title
@@ -20,7 +12,7 @@ const ArtigosTemplate = props => {
 
 
     return (
-    <main style={pageStyles} className="transition-opacity duration-1000 ease-in opacity-100">
+    <main className="pageStyles transition-opacity duration-1000 ease-in opacity-100">
       <Seo
         title={artigo.frontmatter.title + ` - ` + siteTitle}
         keywords={[
@@ -43,12 +35,12 @@ const ArtigosTemplate = props => {
           <div className="text-center space-y-2 sm:text-left">
             <div className="space-y-0.5">
               <span className="text-lg text-black font-semibold border-0 border-b border-solid border-gray-100">
-                <h1 className="font-sans md:text-xl ¿sm:text-base" style={{color: artigo.frontmatter.color}}><span role="img" aria-label={artigo.frontmatter.title}>{artigo.frontmatter.thumbnail}</span> {artigo.frontmatter.title}</h1>
+                <h1 className="mt-4 md:text-xl ¿sm:text-base" style={{color: artigo.frontmatter.color}}><span role="img" aria-label={artigo.frontmatter.title}>{artigo.frontmatter.thumbnail}</span> {artigo.frontmatter.title}</h1>
               </span>
-              <p className="text-gray-500 font-medium text-sm p-2">{artigo.frontmatter.description}</p>
+              <p className="text-gray-700 font-medium text-sm p-2">{artigo.frontmatter.description}</p>
               <hr />
               <br />
-              <div className="description text-sm" dangerouslySetInnerHTML={{__html: artigo.html.replace(/(?:\r\n|\r|\n)/g, '<br />')}}/>
+              <div className="description text-md p-2" dangerouslySetInnerHTML={{__html: artigo.html.replace(/(?:\r\n|\r|\n)/g, '<br />')}}/>
             </div>
             <br />
             <hr />

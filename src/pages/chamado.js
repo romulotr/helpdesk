@@ -3,21 +3,12 @@ import { graphql, StaticQuery } from "gatsby"
 import Header from "../components/header"
 import Seo from "../components/seo"
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 0,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
 
-
-// markup
 const IndexPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
 
-
   return (
-    <main style={pageStyles}>
+    <main className='pageStyles'>
       <Seo
         title={siteTitle}
         keywords={[
@@ -38,7 +29,7 @@ const IndexPage = ({ data }, location) => {
             <div className="text-center space-y-2 sm:text-left">
               <div className="space-y-0.5">
                 <span className="text-lg text-black font-semibold border-0 border-b border-solid border-gray-100">
-                  <h1 className="font-sans md:text-xl ¿sm:text-base"><span role="img" aria-label="Abrir Chamado">🛎</span> Abrir Chamado/Suporte</h1>
+                  <h1 className="mt-4 md:text-xl sm:text-base"><span role="img" aria-label="Abrir Chamado">🛎</span> Abrir Chamado/Suporte</h1>
                 </span>
                 <p className="text-gray-500 font-medium p-2">
                   Informe sua dúvida ou sugestão e nos envie abaixo. Nossa equipe irá te retornar em breve...

@@ -5,7 +5,7 @@ slug: "estoques-e-compras"
 thumbnail: 📦
 title: "Estoques e Compras"
 color: "#1099A8"
-description: "Saiba como realizar o controle das compras da sua empresa! Tenha informações precisas sobre: sistema PDV, emissão de pedidos, orçamento de venda, controle de comissões e muito mais."
+description: "Aprenda controlar seu estoque pelas quantidades de produtos vendidos e compras. Tenha informações pelo PDV ou pedidos e relatórios. Controle múltiplos estoques e vários pontos de vendas."
 ---
 
 Estoques e Compras

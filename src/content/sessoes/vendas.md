@@ -5,7 +5,7 @@ slug: "vendas-e-pedidos"
 thumbnail: 🛍
 title: "Vendas & Pedidos"
 color: "#0D96F2"
-description: "Saiba como realizar o controle das vendas da sua empresa com wEstoque! Tenha informações precisas com ponto de venda, emissão de pedidos, orçamento de vendas, comissões e muito mais."
+description: "Descubra como realizar vendas pelo PDV e lançar pedidos. Tenha informações de clientes e relatórios gerenciais agrupados por mais de uma loja. Controle várias lojas em um só lugar."
 ---
 
 Vendas

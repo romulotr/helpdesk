@@ -4,21 +4,15 @@ import Header from "../components/header"
 import Search from "../components/search"
 import Seo from "../components/seo"
 
-const pageStyles = {
-    color: "#232129",
-    padding: 0,
-    fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  }
 
 class SessaoTemplate extends React.Component {
   render() {
     const siteTitle = this.props.data.site.siteMetadata.title
     const sessao = this.props.data.sessao
     const artigosData = this.props.data.artigos.edges
-    
 
     return (
-    <main style={pageStyles}>
+    <main className='pageStyles'>
       <Seo
         title={sessao.frontmatter.title + ` - ` + siteTitle}
         keywords={[
@@ -41,7 +35,7 @@ class SessaoTemplate extends React.Component {
             <div className="text-center space-y-2 sm:text-left">
               <div className="space-y-0.5">
                 <span className="text-lg text-black font-semibold border-0 border-b border-solid border-gray-100">
-                  <h1 className="font-sans md:text-xl ¿sm:text-base" style={{color: sessao.frontmatter.color}}><span role="img" aria-label={sessao.frontmatter.title}>{sessao.frontmatter.thumbnail}</span> {sessao.frontmatter.title}</h1>
+                  <h1 className="mt-4 md:text-xl sm:text-base" style={{color: sessao.frontmatter.color}}><span role="img" aria-label={sessao.frontmatter.title}>{sessao.frontmatter.thumbnail}</span> {sessao.frontmatter.title}</h1>
                 </span>
                 <p className="text-gray-500 font-medium p-2">
                   {sessao.frontmatter.description}
@@ -55,9 +49,9 @@ class SessaoTemplate extends React.Component {
               return (
                   <div className="border-b border-gray-300 mt-2 p-2" key={node.id}>
                     <Link to={node.frontmatter.slug}>
-                      <h1 className="font-sans md:text-xl sm:text-base text-yellow-500  hover:text-yellow-700">{node.frontmatter.thumbnail}&nbsp;&nbsp;{node.frontmatter.title}</h1>
+                      <h1 className="md:text-xl sm:text-base text-yellow-500  hover:text-yellow-700">{node.frontmatter.thumbnail}&nbsp;&nbsp;{node.frontmatter.title}</h1>
                     </Link>
-                    <p className="font-sans text-xs md:text-sm">{node.frontmatter.description}</p>
+                    <p className="text-xs md:text-sm">{node.frontmatter.description}</p>
                   </div>        
               )
             })}

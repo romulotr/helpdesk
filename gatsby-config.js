@@ -2,10 +2,10 @@ module.exports = {
 	siteMetadata: {
 		title: "Base de Conhecimento - wEstoque.com.br",
 		author: "Sistema wEstoque",
-		description: "Informações e artigos de como usar o sistema wEstoque.com.br",
+		description: "Ajuda do wEstoque. Confira como configurar e gerenciar as principais funcionalidades do wEstoque com os nossos tutoriais, que explicam o passo a passo para utilizar o sistema de forma simples e eficiente.",
 		siteUrl: "https://westoque.netlify.app",
 		social: {
-			twitter: "westoqueapp"
+			twitter: "sistemawestoque"
 		},
 	},
 	plugins: [

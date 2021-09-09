@@ -1,7 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
-    background-color: #f0f0f0;
-  }
+    background-color: #f4f2f5;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    padding: 0px;
+    color: #232129;
+}
+
+/*
+
+paragraphStyles {
+  margin-bottom: 20;
+}
+
+codeStyles {
+  color: "#8A6534";
+  padding: 6;
+  background-color: "#FCCE8B";
+  font-size: "1.25rem";
+  border-radius: 4;
+}
+
+headingStyles {
+  margin-top: 0;
+  margin-bottom: 64;
+  max-width: 320;
+}
+*/

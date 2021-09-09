@@ -6,17 +6,23 @@ slug: "como-criar-novo-estoque"
 thumbnail: 🔧
 title: "Como Criar um Novo Estoque no Loja/Filial"
 color: "#BC027F"
-description: "Como adicionar mais de um estoque na loja/filial."
+description: "Como adicionar mais de um estoque (local de armazenamento) na loja/filial."
 ---
+::> <b>MENU: [ SISTEMA ] -> Estoques</b> <::
 
-Atenção:  Você pode ter até 3 ESTOQUES sem custo adicional. A partir do quarto estoque é cobrado um valor adicional por mês. Ao realizar o cadastro deste novo estoque, o valor será cobrado proporcionalmente na próxima fatura.
+Atenção:  Você pode ter até 1 ESTOQUE por loja sem custo adicional. A partir do segundo estoque é cobrado um valor adicional por mês. Ao realizar o cadastro deste novo estoque, o valor será cobrado proporcionalmente na próxima fatura.
 
-Para adicionar um novo estoque por loja/filial,  siga o passo a passo:
+Para adicionar um novo estoque por loja/filial, siga o passo a passo.
 
 Na barra superior clique em SISTEMA e depois clique em ESTOQUES, conforme a imagem:
+<img alt="Adicionar novo estoque" src="https://user-images.githubusercontent.com/7254854/132568138-528b2401-5cdf-485c-bd6d-3b5aadb813f3.png">
 
-MENU: 
+No canto superior direito da tela, clique em: NOVO ESTOQUE.
+<img alt="Novo Estoque" src="https://user-images.githubusercontent.com/7254854/132568473-7bec076f-9d9b-4988-ac83-aa8a5f5b0771.png">
 
- [ SISTEMA] ->  ESTOQUES
+Agora, é só preencher as informações solicitadas. Após adicionar as informações, clique em salvar, no canto inferior esquerdo da tela.
+<img alt="Adicionar" src="https://user-images.githubusercontent.com/7254854/132568608-4b497c04-bc3c-4593-b08d-fced9e06c90f.png">
+
+*FIM
 
 

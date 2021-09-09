@@ -9,7 +9,7 @@ color: "#BC027F"
 description: "Veja como adicionar, remover ou editar as categorias e informações dos produtos"
 ---
 
-Para adicionar uma nova categoria ou sub-categoria de produto ou adicionar novos registros, siga o passo a passo:
+Para adicionar uma nova categoria ou sub-categoria de produto ou editar registros, siga o passo a passo:
 
 Na barra superior clique em VENDAS e depois clique em PRODUTOS, conforme a imagem:
 

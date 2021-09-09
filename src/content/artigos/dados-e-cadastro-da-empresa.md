@@ -6,15 +6,17 @@ slug: "dados-e-cadastro-da-empresa"
 thumbnail: 🔖
 title: "Como editar dados da empresa?"
 color: "#BC027F"
-description: "Com o wEstoque você cadastra de maneira simples e rápida todas os produtos ou serviços da sua empresa. Confira neste passo a passo e otimize a gestão do seu negócio!"
+description: "Como incluir o endereço, CNPJ e outros dados da sua empresa/loja no sistema."
 ---
 
-Para adicionar informações da empresa, na barra superior clique em SISTEMA e depois Dados Gerais, conforme a imagem:
+::> <b>MENU: [ SISTEMA ] -> Dados Gerais</b> <::
 
-MENU: [ SISTEMA ] -> Dados Gerais
+Para adicionar informações da empresa, na barra superior clique em SISTEMA e depois Dados Gerais, conforme a imagem:
 ![KhviRvKSNWoQBrolsaxcUmmHuXV18ANg](https://user-images.githubusercontent.com/7254854/125307437-6d6b7580-e306-11eb-820f-e230c08d09e7.png)
 
 Clicando em Dados Gerais, vai abrir a tela para cadastrar as informações necessárias. Após adicionar as informações, clique em SALVAR.
 ![sAZCtjBy3AgfpYmTd8tm00ZPwkQYq8le](https://user-images.githubusercontent.com/7254854/125307493-78bea100-e306-11eb-88ec-9c0b090b93ab.png)
 
+Você também pode gerenciar os dados das suas lojas (empresas) utilizando o Cadastro de Filiais. Para isso, use o menu: [SISTEMA] -> Filiais
 
+*FIM

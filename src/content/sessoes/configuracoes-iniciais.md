@@ -9,7 +9,3 @@ description: "Siga o passo-a-passo para o processo de cadastramento da sua empre
 ---
 
 Configurações Iniciais
-
-
-Isso é muito bom! #Loucura#
-

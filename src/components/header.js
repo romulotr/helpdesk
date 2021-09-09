@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     
-      <div className="flex flex-row flex-wrap justify-between px-20 pt-1 align-text-bottom mt-6">
+      <div className="flex flex-row flex-wrap justify-between px-20 pt-1 align-text-bottom pt-6">
         <div className="m-auto">
           <Link to="/"><StaticImage src="../images/logo.png" alt="Ajuda do Sistema wEstoque" /></Link>
         </div>
