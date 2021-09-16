@@ -5,7 +5,7 @@ slug: "configuracoes-iniciais"
 thumbnail: ⭐️
 title: "Configurações Iniciais"
 color: "#BC027F"
-description: "Siga o passo-a-passo para o processo de cadastramento da sua empresa no sistema wEstoque e configure seu ambiente para começar a lançar suas vendas e estoques."
+description: "Siga o passo-a-passo para o processo de cadastramento da sua empresa no sistema wEstoque e configure seu ambiente para começar a lançar suas vendas e controlar seus estoques. Comece suas configurações aqui..."
 ---
 
 Configurações Iniciais
