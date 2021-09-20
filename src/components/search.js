@@ -52,10 +52,6 @@ const Search = ({ data }) => {
       })
     }
 
-    const focusSearch = () => {
-      this.txtSearch = React.createRef();
-      this.txtSearch.current.focus();
-    }
 
     const { filteredData, query } = state
     const hasSearchResults = filteredData && query !== emptyQuery

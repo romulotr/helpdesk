@@ -75,3 +75,10 @@ typings/
 
 # FuseBox cache
 .fusebox/
+.public/
+/public
+public/render-page.js.map
+public/render-page.js
+public/page-data/index/page-data.json
+public/page-data/dev-404-page/page-data.json
+public/page-data/404.html/page-data.json
