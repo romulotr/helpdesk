@@ -1,10 +1,10 @@
 ---
-order: 2
+order: 1
 date: 2018-01-04T01:20:40.199Z
 sessao: "configuracoes-iniciais"
 slug: "dados-e-cadastro-da-empresa"
 thumbnail: 🔖
-title: "Como editar dados da empresa?"
+title: "Como Editar Dados da Empresa?"
 color: "#BC027F"
 description: "Como incluir o endereço, CNPJ e outros dados da sua empresa/loja no sistema."
 ---

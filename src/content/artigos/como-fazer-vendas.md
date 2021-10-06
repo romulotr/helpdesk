@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 1
 date: 2018-01-04T01:20:40.199Z
 sessao: "vendas-e-pedidos"
 slug: "como-fazer-vendas"

@@ -1,7 +1,7 @@
 ---
 order: 4
 date: 2018-01-04T01:20:40.199Z
-sessao: "configuracoes-iniciais"
+sessao: "financeiro"
 slug: "como-cadastrar-formas-de-pagamento"
 thumbnail: 💳
 title: "Como Cadastrar Formas de Pagamento?"

@@ -1,10 +1,10 @@
 ---
-order: 2
+order: 7
 date: 2018-01-04T01:20:40.199Z
 sessao: "vendas-e-pedidos"
 slug: "como-gerenciar-categoria-produtos"
 thumbnail: 🏷
-title: "Como gerenciar/editar categoria e sub-categoria de produtos"
+title: "Como Adicionar / Editar Categorias e Sub-categorias de Produtos"
 color: "#BC027F"
 description: "Veja como adicionar, remover ou editar as categorias e informações dos produtos"
 ---

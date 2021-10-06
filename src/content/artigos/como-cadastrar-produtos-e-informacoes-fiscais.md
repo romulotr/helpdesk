@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 5
 date: 2018-01-04T01:20:40.199Z
 sessao: "configuracoes-iniciais"
 slug: "como-cadastrar-produtos-e-informacoes-fiscais"

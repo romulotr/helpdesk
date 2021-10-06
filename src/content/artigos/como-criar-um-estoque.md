@@ -1,7 +1,7 @@
 ---
-order: 1
+order: 6
 date: 2018-01-04T01:20:40.199Z
-sessao: "estoques-e-compras"
+sessao: "configuracoes-iniciais"
 slug: "como-criar-novo-estoque"
 thumbnail: 🔧
 title: "Como Criar um Novo Estoque no Loja/Filial"
