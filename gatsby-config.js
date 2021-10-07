@@ -3,7 +3,7 @@ module.exports = {
 		title: "Base de Conhecimento - wEstoque.com.br",
 		author: "Sistema wEstoque",
 		description: "Ajuda do wEstoque. Confira como configurar e gerenciar as principais funcionalidades do wEstoque com os nossos tutoriais, que explicam o passo a passo para utilizar o sistema de forma simples e eficiente.",
-		siteUrl: "https://westoque.netlify.app",
+		siteUrl: "https://ajuda.westoque.com.br",
 		social: {
 			twitter: "sistemawestoque"
 		},
@@ -13,6 +13,7 @@ module.exports = {
 		`gatsby-plugin-image`,
 		`gatsby-plugin-sharp`,
 		`gatsby-transformer-sharp`,
+		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -52,16 +53,16 @@ module.exports = {
 			  display: "standalone",
 			  start_url: "/",
 			  icon: `src/images/favicon.png`,
-			  cache_busting_mode: 'none'
+			  cache_busting_mode: 'none',
 			}
 		  },
 		  {
 			resolve: `gatsby-plugin-offline`,
-			options: {
-			  precachePages: [`/`, `/chamado`, `/404`, `/index`, `/*`],
+			options: {			  
 			  workboxConfig: {
 				globPatterns: ['**/*.{js,jpg,png,html,css}']
-			  }
+			  },
+			  precachePages: [`/`, `/chamado`, `/404`, `/index`, `/*`],
 			}
 		  },
 		  {
@@ -80,7 +81,6 @@ module.exports = {
 				},
 			},
 		  },
-		  `gatsby-plugin-offline`,
-		  `gatsby-plugin-react-helmet`,
+
 	],
 }
