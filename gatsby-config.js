@@ -8,6 +8,9 @@ module.exports = {
 			twitter: "sistemawestoque"
 		},
 	},
+	workboxConfig: {
+		globPatterns: ['**/*.{js,jpg,png,html,css}']
+	},
 	plugins: [
 		'gatsby-plugin-postcss',
 		`gatsby-plugin-image`,
@@ -80,3 +83,4 @@ module.exports = {
 		  `gatsby-plugin-react-helmet`,
 	],
 }
+
