@@ -8,9 +8,6 @@ module.exports = {
 			twitter: "sistemawestoque"
 		},
 	},
-	workboxConfig: {
-		globPatterns: ['**/*.{js,jpg,png,html,css}']
-	},
 	plugins: [
 		'gatsby-plugin-postcss',
 		`gatsby-plugin-image`,
@@ -55,12 +52,16 @@ module.exports = {
 			  display: "standalone",
 			  start_url: "/",
 			  icon: `src/images/favicon.png`,
+			  cache_busting_mode: 'none'
 			}
 		  },
 		  {
 			resolve: `gatsby-plugin-offline`,
 			options: {
-			  precachePages: [`/chamado`, `/404`, `/index`, `/*`],
+			  precachePages: [`/`, `/chamado`, `/404`, `/index`, `/*`],
+			  workboxConfig: {
+				globPatterns: ['**/*.{js,jpg,png,html,css}']
+			  }
 			}
 		  },
 		  {
@@ -83,4 +84,3 @@ module.exports = {
 		  `gatsby-plugin-react-helmet`,
 	],
 }
-
