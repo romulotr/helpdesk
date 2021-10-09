@@ -22,6 +22,7 @@ const ArtigosTemplate = props => {
           `controle de estoque`,
           `pdv online`,
         ]}
+        description={artigo.frontmatter.description}
       />
 
       <Header />

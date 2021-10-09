@@ -20,6 +20,7 @@ const IndexPage = ({ data }, location) => {
           `controle de estoque`,
           `pdv online`,
         ]}
+        description="Helpdesk / Base de conhecimento do sistema wEstoque. Descubra como fazer a configuração do software e otimize o seu tempo e de sua equipe com o controle de estoque, vendas e financeiro do Sistema wEstoque. Para saber mais sobre o sistema acesse: www.westoque.com.br"
       />
 
       <Header />

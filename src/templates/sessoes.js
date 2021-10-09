@@ -22,6 +22,7 @@ class SessaoTemplate extends React.Component {
           `controle de estoque`,
           `pdv online`,
         ]}
+        description={sessao.frontmatter.description}
       />
 
       <Header />
