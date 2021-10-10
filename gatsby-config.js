@@ -15,6 +15,13 @@ module.exports = {
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-react-helmet`,
 		{
+		resolve: 'gatsby-plugin-robots-txt',
+		options: {
+			host: 'https://ajuda.westoque.com.br',
+			policy: [{ userAgent: '*', allow: '/' }]
+			}
+		},
+		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				path: `${__dirname}/src/content/sessoes`,
