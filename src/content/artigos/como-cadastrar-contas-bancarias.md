@@ -4,9 +4,9 @@ date: 2018-01-04T01:20:40.199Z
 sessao: "financeiro"
 slug: "como-cadastrar-contas-bancarias"
 thumbnail: 🏦
-title: "Como realizar o cadastro de contas bancárias?"
+title: "Como Fazer o Cadastro de Contas Bancárias?"
 color: "#BC027F"
-description: "Como incluir contas bancárias no sistema wEstoque."
+description: "Como ncluir contas bancárias no sistema wEstoque."
 ---
 
 ::> <b>MENU: [ FINANCEIROS ] -> Contas Bancárias</b> <::

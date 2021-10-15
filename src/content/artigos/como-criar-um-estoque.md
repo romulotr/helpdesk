@@ -4,9 +4,9 @@ date: 2018-01-04T01:20:40.199Z
 sessao: "configuracoes-iniciais"
 slug: "como-criar-novo-estoque"
 thumbnail: 🔧
-title: "Como Criar um Novo Estoque no Loja/Filial"
+title: "Como Criar um Novo Estoque na Loja / Filial"
 color: "#BC027F"
-description: "Como adicionar mais de um estoque (local de armazenamento) na loja/filial."
+description: "Como adicionar mais de um estoque (local de armazenamento) na sua empresa... Tenha mais de um estoque por loja / filial."
 ---
 ::> <b>MENU: [ SISTEMA ] -> Estoques</b> <::
 
