@@ -75,6 +75,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
         <meta name="apple-mobile-web-app-title" content="Ajuda wEstoque" />
+        <meta name="google-site-verification" content="A4_bAB127tIcSUORp94Te0dsYsFcOaBDWMt6X-_gYVQ" />
     </Helmet>
    )
  }
