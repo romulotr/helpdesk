@@ -28,9 +28,13 @@
        title={title}
        titleTemplate={`%s | ${site.siteMetadata.title}`}
        meta={[
+          {
+            name: `description`,
+            content: metaDescription,
+          },  
          {
-           name: `description`,
-           content: metaDescription,
+           name: `google-site-verification`,
+           content: `A4_bAB127tIcSUORp94Te0dsYsFcOaBDWMt6X-_gYVQ`,
          },
          {
            property: `og:title`,
@@ -71,11 +75,13 @@
          )
          .concat(meta)}
      >
+        
         <meta name="description" content={metaDescription} />
+        <meta name="google-site-verification" content="A4_bAB127tIcSUORp94Te0dsYsFcOaBDWMt6X-_gYVQ" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
         <meta name="apple-mobile-web-app-title" content="Ajuda wEstoque" />
-        <meta name="google-site-verification" content="A4_bAB127tIcSUORp94Te0dsYsFcOaBDWMt6X-_gYVQ" />
+        
     </Helmet>
    )
  }
