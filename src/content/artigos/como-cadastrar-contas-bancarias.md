@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 3
 date: 2018-01-04T01:20:40.199Z
 sessao: "financeiro"
 slug: "como-cadastrar-contas-bancarias"
