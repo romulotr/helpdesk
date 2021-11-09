@@ -63,9 +63,9 @@ const IndexPage = ({ data }, location) => {
             return (                
               <div className="border-b border-gray-300 mt-2 p-2" key={node.id}>
                 <Link to={node.frontmatter.sessao+"/"+node.frontmatter.slug}>
-                  <h1 className="md:text-xl sm:text-base text-yellow-500  hover:text-yellow-700">{node.frontmatter.thumbnail}&nbsp;&nbsp;<span className="underline">{node.frontmatter.title}</span></h1>
+                  <h1 className="md:text-xl sm:text-base text-yellow-600  hover:text-yellow-700">{node.frontmatter.thumbnail}&nbsp;&nbsp;<span className="underline">{node.frontmatter.title}</span></h1>
                 </Link>
-                <p className="text-xs md:text-sm">{node.frontmatter.description}</p>
+                <p className="text-xs md:text-sm text-black">{node.frontmatter.description}</p>
               </div>
             )
           })}
@@ -114,7 +114,7 @@ query  {
   artigos: allMarkdownRemark(
     filter: {fileAbsolutePath: {regex: "/artigos/"}}
     sort: {fields: frontmatter___order, order: ASC}
-    limit: 7
+    limit: 6
   ) {
     edges {
       node {

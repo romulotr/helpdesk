@@ -22,11 +22,10 @@ const Search = ({ data }) => {
       const query = event.target.value
       const arrQuery = event.target.value.toLowerCase().split(" ")
     
-
-      // this is how we get all of our posts
+      // this is how we get all of our posts (articles)
       const posts = data.allMarkdownRemark.edges || []
     
-       // return all filtered posts
+       // return all filtered posts (articles)
       const filteredData = posts.filter(post => {
         // destructure data from post frontmatter
         const { description, title, sessao } = post.node.frontmatter
@@ -34,14 +33,9 @@ const Search = ({ data }) => {
           // standardize data with .toLowerCase()
           // return true if the description, title or tags
           // contains the query string
-
-
           contains(description.toLowerCase(), arrQuery) ||
           contains(title.toLowerCase(), arrQuery) ||
           contains(sessao.toLowerCase(), arrQuery)
-
-          //description.toLowerCase().includes(query.toLowerCase()) ||
-          //title.toLowerCase().includes(query.toLowerCase())
         )
       })
     
@@ -51,7 +45,6 @@ const Search = ({ data }) => {
         filteredData, // with filtered data from posts.filter(post => (//filteredData)) above
       })
     }
-
 
     const { filteredData, query } = state
     const hasSearchResults = filteredData && query !== emptyQuery
@@ -84,7 +77,8 @@ const Search = ({ data }) => {
                   }
 
                   {
-                  (query.length && !filteredData.length?
+                  (
+                      query.length && !filteredData.length?
                       <div className="border-b border-gray-300 mt-2 p-2">
                         <h1 className="md:text-xl sm:text-base text-yellow-500"><span role="img" aria-label="não encontrado">🙁</span>&nbsp;&nbsp;Não encontrado...</h1>
                         <p className="text-xs md:text-sm">Tente outra busca/palavra.... Caso necessário, <Link to="/chamado" className="underline text-indigo-500">abra um chamado...</Link></p>
