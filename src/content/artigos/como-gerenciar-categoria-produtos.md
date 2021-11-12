@@ -13,7 +13,7 @@ Para adicionar uma nova categoria ou sub-categoria de produto ou editar registro
 
 Na barra superior clique em VENDAS e depois clique em PRODUTOS, conforme a imagem:
 
-<b>MENU: VENDAS -> PRODUTOS</b>
+::> <b>MENU: [ VENDAS ] -> Produtos</b> <::
 
 ![Acesso Lista Produtos](https://user-images.githubusercontent.com/7254854/114898085-31e50c00-9de8-11eb-8743-586a681ed0df.png)
 

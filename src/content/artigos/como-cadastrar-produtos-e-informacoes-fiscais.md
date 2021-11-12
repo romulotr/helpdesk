@@ -9,7 +9,7 @@ color: "#BC027F"
 description: "Com o wEstoque você cadastra de maneira simples e rápida todas os produtos ou serviços da sua empresa. Confira neste passo a passo e otimize a gestão do seu negócio!"
 ---
 
-::> <b>MENU: [VENDAS] -> PRODUTOS</b> <::
+::> <b>MENU: [ VENDAS ] -> PRODUTOS</b> <::
 
 Para adicionar um novo produto assim como criar novas categorias ou sub-categorias de produto ou editar registros, siga o passo a passo:
 
