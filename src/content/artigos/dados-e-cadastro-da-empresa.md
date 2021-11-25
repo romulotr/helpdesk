@@ -1,6 +1,6 @@
 ---
 order: 1
-date: 2018-01-04T01:20:40.199Z
+date: 2018-01-04T01:19:40.199Z
 sessao: "configuracoes-iniciais"
 slug: "dados-e-cadastro-da-empresa"
 thumbnail: 🔖

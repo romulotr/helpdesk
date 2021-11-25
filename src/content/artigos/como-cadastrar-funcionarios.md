@@ -1,6 +1,6 @@
 ---
 order: 3
-date: 2018-01-04T01:20:40.199Z
+date: 2016-01-03T01:20:40.199Z
 sessao: "configuracoes-iniciais"
 slug: "como-cadastrar-funcionarios"
 thumbnail: 👨‍💻

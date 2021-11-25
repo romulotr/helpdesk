@@ -1,6 +1,6 @@
 ---
 order: 1
-date: 2018-01-04T01:20:40.199Z
+date: 2016-01-02T01:20:40.199Z
 sessao: "estoques-e-compras"
 slug: "como-criar-uma-entrada-de-produtos-em-estoque"
 thumbnail: 🗳

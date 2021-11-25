@@ -113,7 +113,7 @@ query  {
 
   artigos: allMarkdownRemark(
     filter: {fileAbsolutePath: {regex: "/artigos/"}}
-    sort: {fields: frontmatter___order, order: ASC}
+    sort: {fields: frontmatter___date, order: ASC}
     limit: 6
   ) {
     edges {

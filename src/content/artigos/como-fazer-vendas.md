@@ -1,6 +1,6 @@
 ---
 order: 1
-date: 2018-01-04T01:20:40.199Z
+date: 2016-01-01T01:20:40.199Z
 sessao: "vendas-e-pedidos"
 slug: "como-fazer-vendas-no-pdv"
 thumbnail: 🛍
