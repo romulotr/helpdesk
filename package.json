@@ -1,11 +1,11 @@
 {
-  "name": "helpdesk",
+  "name": "Base de Conhecimento - Sistema wEstoque",
   "version": "1.0.0",
   "private": true,
-  "description": "helpdesk",
-  "author": "Rômulo Troian",
+  "description": "Ferramenta completa para controle de sua loja! Estoque, Frente de Caixa, Financeiro e muito mais! Controle de Vendas, Fluxo de Caixa, Gestão Financeira, Gerenciamento de estoques e muitas outras funcionalidades essenciais para a administração de lojas de varejo em um sistema web robusto, dinâmico e de fácil uso. O wEstoque é um sistema que atua como ferramenta de controle de estoque e ponto de venda (PDV) on-line, o qual proporciona conectividade entre diversas filiais através da internet, centralizando as informações em tempo real de operação.",
+  "author": "CodeBox Desenvolvimento de Sistemas",
   "keywords": [
-    "gatsby"
+    "controle de estoque online", "westoque", "sistema de vendas", "webestoque", "controle de estoque", "controle de estoque online", "programa de controle de estoque", "estoque online", "controle de estoque e vendas", "sistema de vendas", "sistema de controle de estoque", "software controle de estoque", "erp online", "sistema de gestão online", "software de controle de estoque", "controle de vendas e estoque", "software gestão comercial", "sistema erp online", "sistema pdv como funciona", "software de gestão comercial"
   ],
   "scripts": {
     "develop": "gatsby develop",

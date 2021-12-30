@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		title: "Base de Conhecimento - wEstoque.com.br",
-		author: "Sistema wEstoque",
+		author: "CodeBox Desenvolvimento de Sistemas",
 		description: "Ajuda do wEstoque. Confira como configurar e gerenciar as principais funcionalidades do wEstoque com os nossos tutoriais, que explicam o passo a passo para utilizar o sistema de forma simples e eficiente.",
 		siteUrl: "https://ajuda.westoque.com.br",
 		social: {
