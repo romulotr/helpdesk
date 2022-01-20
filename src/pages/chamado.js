@@ -8,12 +8,13 @@ const IndexPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
 
   const [value, setValue] = React.useState({})
-  const [serverResponse, setServerResponse] = React.useState(``)
+  const [enviando, setEnviando] = React.useState(false)
+  const [sucesso, setSucesso] = React.useState(false)
+  const [erro, setErro] = React.useState(false)
 
   // Listen to form changes and save them.
   function handleChange(e) {
     value[e.target.id] = e.target.value
-    setServerResponse(``)
     setValue({ ...value })
   }
   // When the form is submitted, send the form values
@@ -22,20 +23,22 @@ const IndexPage = ({ data }, location) => {
     e.preventDefault()
     document.getElementById("btnEnvia").disabled = true;
     value['contatoEnvia'] = true;
-    await window
-      .fetch(`https://westoque.com.br/contato.php`, {
+    setEnviando(true)
+    const result = await fetch(`https://www.westoque.com.br/contato.php`, {
         method: `POST`,
-        mode: 'no-cors',
-        headers: {
-          "content-type": "application/json",
-          'Access-Control-Allow-Origin': '*',
-        },
-        body: JSON.stringify(value)
-      }).then( () => {
-        console.log(serverResponse)
-        alert('Obrigado por entrar em contato! Em breve iremos lhe retornar :)')
-        document.location.reload()
-      })
+        body: JSON.stringify(value),
+        cache: 'no-cache',
+        credentials: 'omit', 
+      });
+      
+      const resultData = await result.json();
+      
+      if (resultData.sent === 'success'){
+        setSucesso(true)
+      }else{
+        setErro(true)
+        setEnviando(false)
+      }
   }
 
   return (
@@ -67,7 +70,23 @@ const IndexPage = ({ data }, location) => {
                 </p>
                 <div>
                 <hr />
+              {
+                !sucesso? (
+                <div>
+                { 
+                    erro ? (
+                    <div className="p-2 m-2 min-w-min text-center">
+                      <h1 className="font-semibold text-3xl  text-gray-700 mb-2 pt-10">Não foi possível enviar sua mensagem! 🥲</h1>
+                      <br/>
+                      Por favor recarregue e tente novamente...
+                      <br/><br/>
+                    </div>
+                    ): null
+                }
                 <br />
+                {
+                !enviando ? (
+                <div id="formChamado">
                 <form className="items-left w-full text-left" onSubmit={onSubmit} method="POST" action="#" name="fmrChamado" id="frmChamado">
                     <div className="md:flex md:items-center mb-6">
                         <div className="md:w-1/3">
@@ -110,6 +129,33 @@ const IndexPage = ({ data }, location) => {
                     </div>
                     </form>
                     <br/><br/>
+                    </div>
+                  ) : (
+                    <div className="p-2 m-2 min-w-min text-center">
+                      <h1 className="font-semibold text-3xl text-gray-700 mb-2 pt-10">Aguarde um instante... <br/>Sua mensagem está sendo enviada 😃</h1>
+                      <br/><br/>
+                      <h1 className="mx-auto h-auto animate-bounce text-5xl">📨</h1>
+                      <br/><br/>
+                    </div>
+                  )}
+              </div>
+            )
+            : null
+            }
+
+                  { 
+                    sucesso ? (
+                    <div className="p-2 m-2 min-w-min text-center">
+                      <h1 className="font-semibold text-3xl  text-gray-700 mb-2 pt-10">Mensagem Enviada com Sucesso!</h1>
+                      <br/><br/>
+                      <h1 className="mx-auto h-auto animate-bounce text-5xl">🎉</h1>
+                      Em breve iremos retornar...
+                      <br/><br/>
+                    </div>
+                    ): null
+                  }
+
+
                 </div>
               </div>              
             </div>
