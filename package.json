@@ -1,5 +1,5 @@
 {
-  "name": "BasedeConhecimento",
+  "name": "helpdesk-westoque",
   "version": "1.0.0",
   "private": true,
   "description": "Ferramenta completa para controle de sua loja! Estoque, Frente de Caixa, Financeiro e muito mais! Controle de Vendas, Fluxo de Caixa, Gestão Financeira, Gerenciamento de estoques e muitas outras funcionalidades essenciais para a administração de lojas de varejo em um sistema web robusto, dinâmico e de fácil uso. O wEstoque é um sistema que atua como ferramenta de controle de estoque e ponto de venda (PDV) on-line, o qual proporciona conectividade entre diversas filiais através da internet, centralizando as informações em tempo real de operação.",
@@ -29,7 +29,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "npm run build",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
