@@ -28,7 +28,7 @@ module.exports = {
 		{
 		resolve: `gatsby-plugin-manifest`,
 		options: {
-			name: `Base de Conhecimento - wEstoque.com.br`,
+			name: `Ajuda wEstoque.com.br`,
 			short_name: `Ajuda wEstoque`,
 			background_color: `#f1f6fa`,
 			theme_color: `#232323`,

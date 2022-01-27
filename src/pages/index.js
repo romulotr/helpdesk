@@ -1,8 +1,11 @@
 import * as React from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import { graphql, StaticQuery, Link } from "gatsby"
+
 import Header from "../components/header"
 import Search from "../components/search"
 import Seo from "../components/seo"
+import Footer from "../components/footer"
 
 const IndexPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -14,13 +17,14 @@ const IndexPage = ({ data }, location) => {
       <Seo
         title={siteTitle}
         keywords={[
-          `westoque`,
+          `wEstoque ajuda`,
+          `wEstoque suporte`,
           `Ajuda wEstoque`,
-          `sistema`,
-          `controle de estoque`,
-          `pdv online`,
+          `sistema wEstoque ajuda`,
+          `suporte do wEstoque`,
+          `ajuda do sistema wEstoque`,
         ]}
-        description="Helpdesk / Base de conhecimento do sistema wEstoque. Descubra como fazer a configuração do software e otimize o seu tempo e de sua equipe com o controle de estoque, vendas e financeiro do Sistema wEstoque. Para saber mais sobre o sistema acesse: www.westoque.com.br"
+        description="Helpdesk / Base de conhecimento do Sistema wEstoque. Descubra como fazer a configuração do software e otimize o seu tempo e de sua equipe com o controle de estoque, vendas e financeiro do Sistema wEstoque. Para saber mais sobre o sistema acesse: www.westoque.com.br"
       />
 
       <Header />
@@ -72,9 +76,33 @@ const IndexPage = ({ data }, location) => {
           <p className="text-xs md:text-sm p-2 mt-3 text-black">Não encontrou dicas para sua dúvida? Faça, <Link to="#sectionSearch" className="underline text-indigo-500" onClick={()=>{const input = document.getElementById("txtBusca"); input.focus();}}>uma busca<span role="img" aria-label="buscar">🔎</span></Link></p>
         </div>
       </div>
+      <br/><br/>
+      <div className="flex flex-wrap mx-auto bg-white p-10">
+      <div className="md:grid md:grid-cols-12 md:gap-6 items-center max-w-5xl mx-auto">
+        <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1 aos-init aos-animate hidden md:block" data-aos="fade-in">
+          <StaticImage
+            src="../images/call-pdv-cliente.png"
+            alt="Sistema Completo de Controle de Estoque, Vendas e Financeiro"
+            placeholder="blurred"
+            layout="fullWidth"
+            quality={100}
+          />									
+        </div>
+        <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 aos-init aos-animate text-center" data-aos="fade-right">
+          <div className="max-w-4xl mx-auto text-center pb-6 md:pb-8">
+            <h1 className="text-center text-5xl font-bold mb-2 p-1" >
+              <span className="underline decoration-yellow-400">Sistema Completo</span> e <span className="underline decoration-yellow-400">Eficiente</span> para<br/><span className="underline decoration-sky-500">Sua Empresa</span>!
+            </h1> 
+            <div className="text-xl text-gray-700 mb-2 w-full">Com o <b className="text-2xl">w<span className="text-yellow-400">Estoque</span></b> você pode focar no seu negócio!</div>
+          </div>
+          <a href="https://www.westoque.com.br/usar" rel="noreferrer" className="max-w-xs font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-md text-white bg-yellow-400 hover:bg-yellow-500 hover:transition-transform hover:scale-110 shadow-md shadow-yellow-400/50 transition duration-150 ease-in-out">EXPERIMENTE GRÁTIS</a>
+        </div>
+      </div>
+      <Footer />
+      </div>
       <br /><br />
-      <hr />
-      <br />
+      
+
     </main>
   )
 }
